@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.0)
+
+PROJECT (hellocmake)
+ADD_SUBDIRECTORY (src)
+option(ENABLE_MPI "Enable MPI parallelization" OFF)
+if(ENABLE_MPI)
+	if(WIN32)
+		find_package(MPI REQUIRED)
+		if(MPI_FOUND)
+			message("Using MPI")
+			
+
+		endif(MPI_FOUND)
+	endif(WIN32)
+endif(ENABLE_MPI)
