@@ -1,20 +1,19 @@
-# Cross-Compiling Test
-This is a minimal example of using CMake and C programming that should
+# CMake Visual Studio 2017 Microsoft MPI Test
+This is a minimal example of using CMake, C programming, MS MPI and Visual Studio that should
 be able to be compiled on Windows, Mac and Linux with little or no modification.
 ##  Windows
 #### Software required
-- CMAKE gui (https://cmake.org/download/)
+- CMAKE-GUI (https://cmake.org/download/)
 - Visual Studio 2017 (community version, free)
-- (suggested) atom for ediing source code
 
 #### To compile
 - download zip file of project and extract
-- use cmake gui
+- use cmake gui and
   - point cmake to source code and also specify the build to
     be in the same location as source but in build (i.e., source/build).
-  - once configured once specify "Debug" for the CMAKE_CONFIGUATION_TYPES
-  - configure and generate makefile and select open project
-
+  - once configured, select generate, and then open project
+  - once in Visual studio select helloworld as startup project 
+  - then build 
 
 ## Linux
 #### To compile
