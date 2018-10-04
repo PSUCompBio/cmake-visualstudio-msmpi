@@ -8,8 +8,6 @@ if(ENABLE_MPI)
 		find_package(MPI REQUIRED)
 		if(MPI_FOUND)
 			message("Using MPI")
-			
-
 		endif(MPI_FOUND)
 	endif(WIN32)
 endif(ENABLE_MPI)
